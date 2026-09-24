@@ -390,3 +390,28 @@ section[id], .method[id]{scroll-margin-top:92px}
  .contactLinks{gap:8px;font-size:12.5px}
  .artistHeroSite h1{font-size:44px}
 }
+
+/* V16.1 — Mobile type refinement: slightly more compact reading scale, desktop untouched */
+@media(max-width:900px){
+ body{font-size:14px;line-height:1.48}
+ .heroStatement{font-size:14px!important;line-height:1.50!important}
+ .psychotherapyInline p{font-size:13.5px!important;line-height:1.46!important}
+ .intro p{font-size:14px;line-height:1.48}
+ .intro strong{font-size:14px;line-height:1.45}
+ .sectionHead p,.areasIntro .lead{font-size:14px;line-height:1.48}
+ .grid p{font-size:13px;line-height:1.43}
+ .method p,.method strong{font-size:14px;line-height:1.48}
+ .studioText p{font-size:13.5px;line-height:1.46}
+ .fullReviews blockquote{font-size:13px;line-height:1.50}
+ .contact p{font-size:14px;line-height:1.46}
+ .artistLead{font-size:14px;line-height:1.50}
+ .artistIntro p{font-size:14px;line-height:1.48}
+ .artistGridSite p{font-size:13px;line-height:1.44}
+ .artistStudioText p{font-size:13.5px;line-height:1.46}
+}
+@media(max-width:420px){
+ .heroName{font-size:45px!important}
+ .oneLineTitle{font-size:31px!important}
+ .sectionHead h2{font-size:34px}
+ .contact h2{font-size:39px}
+}
