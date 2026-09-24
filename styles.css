@@ -285,3 +285,108 @@ section[id], .method[id]{scroll-margin-top:92px}
 .artistHeroText .artistKicker,.artistHeroText h1,.artistHeroText .artistLead,.artistHeroText .credentials{width:100%;max-width:800px}
 .artistHeroText>.btn{align-self:flex-start;background:var(--cta-wash);border:1px solid rgba(226,176,158,.72);color:#fff}
 @media(max-width:900px){.artistHeroText{padding-right:24px;padding-left:24px;align-items:stretch}}
+
+
+/* V16 — Mobile polish: navigation, scale, rhythm and compact contact layout */
+.menuToggle{display:none;background:transparent;border:0;color:#fff;width:38px;height:38px;padding:8px;cursor:pointer;flex:0 0 auto}
+.menuToggle span{display:block;width:22px;height:1.5px;background:currentColor;margin:5px auto;transition:transform .2s ease,opacity .2s ease}
+
+@media(max-width:900px){
+ :root{--mobile-edge:20px}
+ body{font-size:15px;line-height:1.52}
+ header{height:70px;padding:0 var(--mobile-edge);gap:10px;justify-content:flex-start;direction:rtl}
+ .brand{margin:0;min-width:0;line-height:1.04;flex:1 1 auto}
+ .brand b{font-size:23px;white-space:nowrap}
+ .brand small{font-size:8px;margin-top:4px;white-space:nowrap}
+ header>.btn.small{order:3;flex:0 0 auto;font-size:10.5px;padding:9px 12px;border-radius:9px;white-space:nowrap}
+ .menuToggle{display:block;order:2}
+ header nav{display:none;position:absolute;top:70px;right:0;left:0;margin:0;padding:10px var(--mobile-edge) 14px;background:rgba(16,41,54,.99);border-top:1px solid rgba(255,255,255,.10);box-shadow:0 10px 22px rgba(0,0,0,.16);gap:0;direction:rtl;z-index:20}
+ body.menuOpen header nav{display:flex;flex-direction:column}
+ header nav a{display:block;padding:11px 2px;border-bottom:1px solid rgba(255,255,255,.09);font-size:14px;opacity:.92}
+ header nav a:last-child{border-bottom:0}
+ body.menuOpen .menuToggle span:nth-child(1){transform:translateY(6.5px) rotate(45deg)}
+ body.menuOpen .menuToggle span:nth-child(2){opacity:0}
+ body.menuOpen .menuToggle span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg)}
+ section[id],.method[id]{scroll-margin-top:82px}
+
+ .heroV7 .heroText{padding:32px var(--mobile-edge) 28px}
+ .heroName{font-size:49px!important;line-height:.98!important;margin-bottom:7px!important}
+ .heroRole{font-size:18px;line-height:1.28;margin-bottom:13px}
+ .heroStatement{font-size:15px!important;line-height:1.56!important}
+ .heroV7 .credentials{font-size:15px;margin:10px 0 13px}
+ .heroV7>.heroText>.btn{padding:11px 18px;font-size:15px;align-self:flex-start}
+ .quick{font-size:12.5px;gap:9px;margin-top:12px;flex-wrap:nowrap}
+ .psychotherapyInline{margin-top:19px;padding-top:16px}
+ .psychotherapyInline h3{font-size:31px;margin-bottom:7px}
+ .psychotherapyInline p{font-size:14.5px!important;line-height:1.5!important;margin-bottom:7px!important}
+ .heroV7 .heroImage{height:38vh;min-height:280px}
+
+ .intro,.areas,.reviews{padding-left:var(--mobile-edge);padding-right:var(--mobile-edge)}
+ .intro{padding-top:38px;padding-bottom:40px}
+ .intro h2,.method h2,.about h2,.studio h2{font-size:37px}
+ .oneLineTitle{font-size:34px!important;line-height:1.08;text-wrap:balance}
+ .intro p{font-size:15px;line-height:1.52;margin-bottom:8px}
+ .intro strong{font-size:15px;line-height:1.48;margin-top:13px;padding-right:13px}
+
+ .areas{padding-top:40px;padding-bottom:40px}
+ .sectionHead{margin-bottom:20px}
+ .sectionHead h2{font-size:37px;line-height:1.08}
+ .sectionHead p,.areasIntro .lead{font-size:15px;line-height:1.52}
+ .areasIntro{margin-bottom:21px}
+ .grid article{padding:17px 18px 16px}
+ .grid b{font-size:16px}
+ .grid p{font-size:14px;line-height:1.46;margin-top:5px}
+ .moreLink{font-size:13.5px;margin-top:.5rem}
+
+ .method{padding:40px var(--mobile-edge)}
+ .method p,.method strong{font-size:15px;line-height:1.52}
+ .methodTags{font-size:13.5px;margin-top:15px;padding-top:13px;line-height:1.55}
+ .studioImg{height:275px}
+ .studioText{padding:38px var(--mobile-edge)}
+ .studioText p{font-size:14.5px;line-height:1.5}
+
+ .reviews{padding-top:40px;padding-bottom:44px}
+ .fullReviews blockquote{padding:22px 20px 20px;font-size:14.5px;line-height:1.55}
+ .fullReviews cite{font-size:12.5px;margin-top:13px}
+
+ .contact{padding:42px var(--mobile-edge) 46px}
+ .contact h2{font-size:43px;line-height:1.05;margin:4px 0 10px}
+ .contact p{font-size:15px;line-height:1.5;margin:8px auto 18px;max-width:560px}
+ .contact .btn{padding:11px 19px;font-size:15px}
+ .contactLinks{flex-direction:row;align-items:center;flex-wrap:nowrap;gap:10px;margin-top:18px;font-size:13px}
+ footer{padding:14px var(--mobile-edge);font-size:11.5px}
+
+ /* Artists page uses the same mobile scale */
+ .artistHeroText{padding:36px var(--mobile-edge) 30px}
+ .artistKicker{font-size:12px;margin-bottom:9px}
+ .artistHeroSite h1{font-size:47px;line-height:1.02;margin-bottom:14px}
+ .artistLead{font-size:15px;line-height:1.56}
+ .artistHeroText .credentials{font-size:15px;margin:10px 0 13px}
+ .artistHeroText>.btn{padding:11px 18px;font-size:15px}
+ .artistHeroImage{height:36vh;min-height:270px}
+ .artistIntro,.artistAreas{padding:40px var(--mobile-edge)}
+ .artistIntro h2,.artistStudio h2{font-size:37px}
+ .artistIntro p{font-size:15px;line-height:1.52}
+ .artistGridSite article{padding:17px 18px}
+ .artistGridSite b{font-size:16px}
+ .artistGridSite p{font-size:14px;line-height:1.48}
+ .artistStudioText{padding:38px var(--mobile-edge)}
+ .artistStudioText p{font-size:14.5px;line-height:1.5}
+ .artistStudioImage{height:275px}
+}
+
+@media(max-width:420px){
+ :root{--mobile-edge:17px}
+ header{gap:7px}
+ .brand b{font-size:21px}
+ .brand small{font-size:7.4px}
+ header>.btn.small{font-size:9.8px;padding:8px 9px}
+ .menuToggle{width:34px;padding:7px}
+ .heroName{font-size:46px!important}
+ .heroRole{font-size:17px}
+ .oneLineTitle{font-size:32px!important}
+ .sectionHead h2{font-size:35px}
+ .contact h2{font-size:40px}
+ .contactLinks{gap:8px;font-size:12.5px}
+ .artistHeroSite h1{font-size:44px}
+}
