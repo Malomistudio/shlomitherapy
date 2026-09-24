@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://shlomitherapy.pages.dev/sitemap.xml
