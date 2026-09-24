@@ -415,3 +415,15 @@ section[id], .method[id]{scroll-margin-top:92px}
  .sectionHead h2{font-size:34px}
  .contact h2{font-size:39px}
 }
+
+/* V16.2 — Header identity refinement only */
+.brand b{font-size:26px}
+.brand small{font-size:12px;line-height:1.18;margin-top:5px;opacity:.82}
+@media(max-width:900px){
+ .brand b{font-size:25px}
+ .brand small{font-size:9.5px;line-height:1.16;margin-top:4px}
+}
+@media(max-width:420px){
+ .brand b{font-size:23px}
+ .brand small{font-size:8.8px}
+}
