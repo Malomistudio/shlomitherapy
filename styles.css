@@ -427,3 +427,8 @@ section[id], .method[id]{scroll-margin-top:92px}
  .brand b{font-size:23px}
  .brand small{font-size:8.8px}
 }
+
+/* V16.8 bilingual additions only */
+.langSwitch{display:flex;align-items:center;gap:7px;font-size:12px;letter-spacing:.08em;white-space:nowrap}.langSwitch a{opacity:.72}.langSwitch a:hover{opacity:1}.langSwitch b{font-weight:700}.langSwitch span{opacity:.38}
+html[dir="ltr"] body{text-align:left}html[dir="ltr"] .brand{margin-left:0;margin-right:auto}html[dir="ltr"] .heroText,html[dir="ltr"] .sectionHead,html[dir="ltr"] .studioText,html[dir="ltr"] .method{text-align:left}
+@media(max-width:760px){.langSwitch{margin-left:auto;margin-right:2px;font-size:11px}html[dir="ltr"] .langSwitch{margin-left:auto;margin-right:2px}}
