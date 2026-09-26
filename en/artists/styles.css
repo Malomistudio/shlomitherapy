@@ -1,0 +1,443 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;500;600;700&family=Amatic+SC:wght@400;700&display=swap');
+:root{--ink:#142b38;--blue:#163445;--deep:#102936;--cream:#f6f1e8;--paper:#fbf8f2;--rust:#c96845;--muted:#6c746f}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:'Assistant',Arial,sans-serif;line-height:1.62}a{color:inherit;text-decoration:none}header{height:76px;background:rgba(16,41,54,.98);color:#fff;display:flex;align-items:center;gap:32px;padding:0 5vw;position:sticky;top:0;z-index:10}.brand{margin-left:auto;line-height:1.1}.brand b{font-family:'Amatic SC',cursive;font-size:24px}.brand small{display:block;font-size:10px;margin-top:5px;opacity:.76}nav{display:flex;gap:23px;font-size:14px}nav a{opacity:.8}nav a:hover{opacity:1}.btn{display:inline-block;background:var(--rust);color:#fff;padding:13px 25px;border-radius:999px;font-weight:600}.btn.small{padding:10px 19px;font-size:13px}.hero{min-height:535px;background:var(--deep);color:#fff;display:grid;grid-template-columns:43% 57%;direction:ltr}.heroText{direction:rtl;padding:42px 7vw 40px 4vw;display:flex;flex-direction:column;align-items:flex-start;justify-content:center}.eyebrow{color:#d99a7f;font-size:13px}.hero h1{font-family:'Amatic SC',cursive;font-size:61px;line-height:1;margin:10px 0 14px}.hero p{font-size:16.5px;max-width:545px;color:#eeeae4;margin:6px 0}.heroSub{opacity:.86}.credentials{font-weight:600;margin:12px 0 17px}.quick{display:flex;gap:10px;margin-top:13px;font-size:13px;opacity:.72}.heroImage{overflow:hidden}.heroImage img{width:100%;height:100%;object-fit:cover;object-position:center}.sectionNo{font-size:12px;color:var(--rust)}.intro{padding:50px 10vw;display:grid;grid-template-columns:65px minmax(0,900px);justify-content:center;gap:22px;background:var(--cream)}.intro h2,.method h2,.about h2,.studio h2,.contact h2{font-family:'Amatic SC',cursive;font-size:40px;line-height:1.12;margin:0 0 15px}.intro h2 em{font-style:normal;color:var(--rust)}.intro p{font-size:16.5px;margin:9px 0}.intro strong{display:block;border-right:3px solid var(--rust);padding-right:16px;margin-top:15px;font-size:17px}.areas{padding:50px 6vw}.sectionHead{text-align:center;margin-bottom:24px}.sectionHead span{color:var(--rust);font-size:12px}.sectionHead h2{font-family:'Amatic SC',cursive;font-size:42px;margin:3px}.sectionHead p{color:var(--muted);margin:5px}.grid{max-width:1200px;margin:auto;display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:#ded8ce;border:1px solid #ded8ce}.grid article{background:var(--paper);padding:20px 21px}.grid b{font-size:17px}.grid p{color:#5d6664;margin:7px 0 0;font-size:14.5px;line-height:1.5}.approachStudio{display:grid;grid-template-columns:42% 58%;background:#fff}.method{padding:48px 5vw 48px 7vw;display:flex;flex-direction:column;justify-content:center}.method p{font-size:16px;margin:7px 0}.method strong{font-size:16px;margin-top:9px}.studio{display:grid;grid-template-columns:44% 56%;background:var(--blue);color:#fff;min-height:455px}.studioImg{overflow:hidden}.studioImg img{width:100%;height:100%;object-fit:cover;object-position:center;filter:saturate(.85)}.studioText{padding:42px 4vw;display:flex;flex-direction:column;justify-content:center}.studioText>span{color:#e1a38c;font-size:12px}.studioText p{font-size:15.5px;color:#e2e7e7;margin:7px 0}.about{padding:50px 10vw;display:grid;grid-template-columns:1fr 1.7fr;gap:45px;background:#fff}.about>div:last-child{font-size:16.5px}.about p{margin:7px 0}.note{margin-top:15px;padding:14px;border:1px solid #d8d2c7}.note small{color:#777}.reviews{padding:50px 6vw;background:var(--cream)}.reviewGrid{max-width:1200px;margin:auto;display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.reviewGrid blockquote{margin:0;background:#fff;padding:21px;font-family:'Amatic SC',cursive;font-size:20px;line-height:1.5;border-top:3px solid var(--rust)}.reviewGrid cite{display:block;font-family:'Assistant';font-size:13px;font-style:normal;margin-top:14px;color:#777}.contact{text-align:center;background:var(--deep);color:#fff;padding:52px 20px}.contact>span{color:#dfa38b}.contact h2{font-size:56px;margin:6px}.contact p{max-width:700px;margin:10px auto 20px;color:#dbe2e3;font-size:16.5px}.contactLinks{display:flex;justify-content:center;gap:28px;margin-top:20px;font-size:14px;opacity:.8}footer{text-align:center;padding:15px;background:#0b202a;color:#b7c0c4;font-size:12px}
+@media(max-width:1100px){.grid{grid-template-columns:repeat(2,1fr)}.approachStudio{grid-template-columns:1fr}.method{padding:50px 8vw}.studio{min-height:410px}}
+@media(max-width:900px){header{height:65px;padding:0 18px}.brand small{font-size:8.5px}nav{display:none}.brand{margin-left:auto}.btn.small{font-size:11px;padding:9px 12px}.hero{grid-template-columns:1fr;min-height:0}.heroImage{grid-row:1;height:46vh;min-height:340px}.heroText{grid-row:2;padding:38px 24px 45px}.hero h1{font-size:59px}.hero p{font-size:16px}.intro,.about{grid-template-columns:1fr;padding:48px 24px;gap:12px}.intro h2,.method h2,.about h2,.studio h2{font-size:43px}.areas{padding:48px 18px}.studio{grid-template-columns:1fr}.studioImg{height:320px}.studioText{padding:40px 24px}.reviewGrid{grid-template-columns:1fr}.reviews{padding:48px 18px}.contact h2{font-size:49px}.contactLinks{flex-direction:column;gap:4px}.quick{flex-wrap:wrap}}
+@media(max-width:560px){.grid{grid-template-columns:1fr}.hero h1{font-size:54px}}
+
+/* V5 refinements */
+.oneLineTitle{white-space:nowrap;font-size:clamp(30px,3.15vw,52px);line-height:1.12}
+.methodTags{margin-top:24px;padding-top:18px;border-top:1px solid rgba(255,255,255,.2);font-weight:700;letter-spacing:.01em;line-height:1.9}
+.fullReviews{grid-template-columns:repeat(2,minmax(0,1fr));align-items:start}
+.fullReviews blockquote{height:auto;min-height:0}
+.fullReviews cite{display:block;margin-top:18px}
+@media(max-width:900px){.oneLineTitle{white-space:normal}.fullReviews{grid-template-columns:1fr}}
+
+/* V6 refinements */
+.heroOneLine{white-space:nowrap;font-size:clamp(39px,4.15vw,64px)!important;letter-spacing:-.015em}
+.psychotherapy{padding:42px 10vw;background:#fff;display:grid;grid-template-columns:65px minmax(0,1080px);justify-content:center;gap:22px}
+.psychotherapy h2{font-family:'Amatic SC',cursive;font-size:40px;line-height:1.1;margin:0 0 12px}
+.psychotherapy p{font-size:16.5px;max-width:1080px;margin:7px 0}
+.intro{grid-template-columns:65px minmax(0,1080px)}
+.intro>div{max-width:1080px}
+.intro p{max-width:1080px}
+.areasIntro{max-width:1050px;margin:0 auto 28px}
+.areasIntro .lead{font-size:16.5px;line-height:1.62;color:var(--ink);margin:8px auto;max-width:1020px}
+@media(max-width:900px){.heroOneLine{white-space:normal;font-size:54px!important}.psychotherapy{grid-template-columns:1fr;padding:42px 24px;gap:10px}.psychotherapy h2{font-size:43px}.oneLineTitle{white-space:normal}.areasIntro .lead{font-size:16px}}
+
+/* V7 hero: Hebrew reading flow, text on right and image on left */
+.heroV7{grid-template-columns:55% 45%;direction:rtl;min-height:690px;align-items:stretch}
+.heroV7 .heroText{direction:rtl;grid-column:1;padding:42px 5.5vw 34px 4vw;justify-content:center;align-items:flex-start}
+.heroV7 .heroImage{grid-column:2;grid-row:1;direction:ltr}
+.heroV7 .eyebrow{display:none}
+.heroName{font-family:'Amatic SC',cursive;font-size:clamp(50px,4.8vw,72px)!important;line-height:.95!important;margin:0 0 8px!important;white-space:nowrap}
+.heroRole{font-family:'Assistant',Arial,sans-serif;font-size:clamp(20px,1.65vw,27px);line-height:1.25;margin:0 0 17px;font-weight:500;color:#f2eee8}
+.heroStatement{max-width:700px!important;font-size:16.5px!important;line-height:1.7!important;margin:0 0 5px!important}
+.heroV7 .credentials{margin:9px 0 14px}
+.heroV7 .quick{margin-top:10px}
+.psychotherapyInline{width:100%;max-width:760px;margin-top:24px;padding-top:20px;border-top:1px solid rgba(255,255,255,.18)}
+.psychotherapyInline .sectionNo{display:block;margin-bottom:3px;color:#d99a7f}
+.psychotherapyInline h3{font-family:'Amatic SC',cursive;font-size:31px;line-height:1.1;margin:0 0 7px;color:#fff}
+.psychotherapyInline p{font-size:14.5px!important;line-height:1.55!important;color:#dce3e3!important;max-width:740px!important;margin:5px 0!important}
+@media(max-width:900px){
+ .heroV7{display:flex;flex-direction:column;min-height:0}
+ .heroV7 .heroText{order:1;padding:36px 24px 28px}
+ .heroV7 .heroImage{order:2;height:46vh;min-height:340px}
+ .heroName{font-size:58px!important;white-space:normal}
+ .heroRole{font-size:21px}
+ .heroStatement{font-size:16px!important}
+ .psychotherapyInline{margin-top:24px;padding-top:20px}
+ .psychotherapyInline h3{font-size:34px}
+ .psychotherapyInline p{font-size:15px!important}
+}
+
+/* V8 — tighter editorial hero, calmer CTA, RTL navigation */
+:root{--rust:#b87963;--rust-dark:#a96550;--softline:rgba(255,255,255,.14)}
+header{gap:26px;justify-content:flex-start;padding:0 4.2vw;direction:rtl}
+.brand{margin:0;flex:0 0 auto;min-width:max-content}
+nav{margin-left:auto;margin-right:8px;direction:rtl;gap:25px}
+header>.btn.small{margin-right:0;background:transparent;border:1px solid rgba(232,190,172,.68);color:#f1ddd5;padding:9px 18px;font-weight:500}
+header>.btn.small:hover{background:rgba(184,121,99,.12);border-color:#e2b09e}
+.btn{background:var(--rust);padding:11px 22px;border-radius:10px;font-weight:600;transition:.2s ease}
+.btn:hover{background:var(--rust-dark);transform:translateY(-1px)}
+.heroV7{grid-template-columns:58% 42%;min-height:680px}
+.heroV7 .heroText{padding:44px 6.3vw 38px 6vw;justify-content:center;align-items:stretch}
+.heroV7 .heroImage{margin:30px 0 30px 3vw;min-height:620px;border-radius:0 14px 14px 0;overflow:hidden}
+.heroV7 .heroImage img{object-position:center 42%}
+.heroName{font-size:clamp(48px,4.1vw,66px)!important;margin-bottom:8px!important}
+.heroRole{font-size:clamp(19px,1.45vw,24px);margin-bottom:14px}
+.heroStatement{max-width:760px!important;font-size:16px!important;line-height:1.66!important;margin:0!important;font-weight:400}
+.heroStatement b{font-weight:500}
+.heroV7 .credentials{margin:11px 0 13px;font-size:14px}
+.heroV7>.heroText>.btn{align-self:flex-start;background:transparent;border:1px solid rgba(232,190,172,.7);color:#f4e3dc}
+.heroV7>.heroText>.btn:hover{background:rgba(184,121,99,.13)}
+.heroV7 .quick{margin:9px 0 0;font-size:12.5px;opacity:.76}
+.psychotherapyInline{max-width:790px;margin-top:20px;padding:17px 0 0;border-top:1px solid var(--softline)}
+.psychotherapyInline .sectionNo{display:none}
+.psychotherapyInline h3{font-size:29px;margin:0 0 6px}
+.psychotherapyInline p{font-size:14px!important;line-height:1.52!important;max-width:790px!important;margin:4px 0!important}
+.contact{padding:58px 20px 62px}
+.contact>span{display:none}
+.contact h2{font-family:'Amatic SC',cursive;font-size:54px;margin:0 0 9px}
+.contact p{max-width:780px;margin:0 auto 22px;font-size:17px;line-height:1.7}
+.contact .btn.light{background:transparent;border:1px solid rgba(232,190,172,.72);color:#f5e6df;padding:11px 24px}
+.contact .btn.light:hover{background:rgba(184,121,99,.13)}
+.contactLinks{margin-top:13px;font-size:12.5px;opacity:.7;direction:rtl}
+@media(max-width:1100px){.heroV7{grid-template-columns:56% 44%}.heroV7 .heroText{padding-right:4.5vw;padding-left:4.5vw}.heroV7 .heroImage{margin-left:2vw}}
+@media(max-width:900px){header{direction:rtl;justify-content:space-between}.brand{margin:0}.heroV7{display:flex}.heroV7 .heroText{order:1;padding:34px 24px 30px}.heroV7 .heroImage{order:2;margin:0;height:46vh;min-height:340px;border-radius:0}.psychotherapyInline{max-width:none}.contact h2{font-size:48px}.contact p{font-size:16px}}
+
+/* V9 — coherent text blocks across the entire site */
+body{line-height:1.68}
+.heroV7 .heroText{padding-top:40px;padding-bottom:40px}
+.heroName,.heroRole,.heroStatement,.credentials,.psychotherapyInline{width:100%;max-width:760px}
+.heroStatement{font-size:16.5px!important;line-height:1.72!important;text-wrap:pretty}
+.psychotherapyInline{margin-top:22px;padding-top:18px}
+.psychotherapyInline h3{margin-bottom:9px}
+.psychotherapyInline p{font-size:14.5px!important;line-height:1.62!important;margin:0 0 8px!important;text-wrap:pretty}
+
+.intro{grid-template-columns:42px minmax(0,1080px);gap:18px;padding-top:56px;padding-bottom:56px}
+.intro>div{width:100%}
+.intro h2{margin-bottom:20px;text-wrap:balance}
+.intro p{font-size:16.5px;line-height:1.72;margin:0 0 12px;text-wrap:pretty}
+.intro strong{max-width:1000px;margin-top:18px;line-height:1.65}
+
+.areasIntro{max-width:1080px;margin-bottom:32px}
+.areasIntro h2{margin-bottom:13px}
+.areasIntro .lead{max-width:1000px;line-height:1.72;margin:0 auto 11px;text-align:right;text-wrap:pretty}
+.grid article{padding:23px 23px 22px}
+.grid b{display:block;line-height:1.35;margin-bottom:8px}
+.grid p{margin:0;font-size:14.5px;line-height:1.58;text-wrap:pretty}
+
+.method{padding-top:56px;padding-bottom:56px}
+.method h2{margin-bottom:17px}
+.method p{max-width:640px;font-size:16px;line-height:1.7;margin:0 0 11px;text-wrap:pretty}
+.method strong{display:block;max-width:640px;line-height:1.65;margin-top:4px}
+.methodTags{max-width:640px;margin-top:22px}
+.studioText{padding-top:48px;padding-bottom:48px}
+.studioText h2{margin:6px 0 18px}
+.studioText p{max-width:620px;font-size:15.5px;line-height:1.68;margin:0 0 11px;text-wrap:pretty}
+
+.sectionHead{max-width:1000px;margin-left:auto;margin-right:auto}
+.reviewGrid blockquote{font-size:19px;line-height:1.58;padding:25px 27px;text-wrap:pretty}
+.contact p{max-width:820px;line-height:1.72;text-wrap:pretty}
+
+@media(max-width:900px){
+ .heroName,.heroRole,.heroStatement,.credentials,.psychotherapyInline{max-width:none}
+ .intro{grid-template-columns:1fr;gap:8px;padding:46px 24px}
+ .intro p{font-size:16px}
+ .areasIntro .lead{text-align:right}
+ .method p,.method strong,.methodTags,.studioText p{max-width:none}
+}
+
+
+/* V10 — alignment and typography polish */
+:root{--page-edge:4.2vw}
+/* Header and hero now share one exact RTL edge */
+header{padding-right:var(--page-edge);padding-left:var(--page-edge)}
+.heroV7 .heroText{padding-right:var(--page-edge);padding-left:5.4vw}
+.heroName,.heroRole,.heroStatement,.credentials,.psychotherapyInline{max-width:800px}
+
+/* Remove decorative section numbering completely */
+.sectionNo,.sectionHead>span,.studioText>span{display:none!important}
+
+/* Slightly tighter rhythm so copy reads as deliberate text blocks */
+body{line-height:1.58}
+.heroStatement{line-height:1.58!important}
+.heroV7 .credentials{margin:9px 0 11px}
+.heroV7 .quick{margin-top:8px}
+.psychotherapyInline{margin-top:18px;padding-top:16px}
+.psychotherapyInline h3{margin-bottom:7px}
+.psychotherapyInline p{line-height:1.48!important;margin:0 0 6px!important}
+
+/* Main editorial copy: wider, tighter, predictable blocks */
+.intro{grid-template-columns:minmax(0,1160px);padding:48px 8vw;gap:0}
+.intro h2{margin-bottom:16px}
+.intro p{line-height:1.58;margin:0 0 9px}
+.intro strong{line-height:1.52;margin-top:14px}
+.oneLineTitle{font-size:clamp(28px,2.55vw,45px);white-space:nowrap}
+
+.areas{padding-top:46px;padding-bottom:46px}
+.areasIntro{margin-bottom:26px}
+.areasIntro h2{margin-bottom:11px}
+.areasIntro .lead{line-height:1.58;margin-bottom:8px}
+.grid article{padding:21px 23px 20px}
+.grid p{line-height:1.5}
+
+.method{padding-top:50px;padding-bottom:50px}
+.method h2{margin-bottom:14px}
+.method p{line-height:1.58;margin-bottom:8px}
+.method strong{line-height:1.52}
+.methodTags{margin-top:18px;padding-top:15px;line-height:1.6}
+.studioText{padding-top:44px;padding-bottom:44px}
+.studioText h2{margin-top:0;margin-bottom:14px}
+.studioText p{line-height:1.55;margin-bottom:8px}
+
+.reviewGrid blockquote{line-height:1.5}
+.contact{padding-top:52px;padding-bottom:56px}
+.contact p{max-width:900px;line-height:1.55;margin-bottom:20px}
+
+@media(max-width:1250px){
+ .oneLineTitle{font-size:clamp(28px,2.35vw,39px)}
+}
+@media(max-width:1000px){
+ .oneLineTitle{white-space:normal;text-wrap:balance;max-width:760px}
+}
+@media(max-width:900px){
+ :root{--page-edge:24px}
+ header{padding-right:18px;padding-left:18px}
+ .heroV7 .heroText{padding-right:24px;padding-left:24px}
+ .intro{padding:44px 24px}
+ .intro p{line-height:1.58}
+ .oneLineTitle{white-space:normal;text-wrap:balance}
+}
+
+/* V11 — one site grid, warmer CTAs, refined testimonials */
+:root{--content-max:1160px;--cta-wash:rgba(184,121,99,.28);--cta-wash-hover:rgba(184,121,99,.38)}
+
+/* Header and hero share the same outer edges. The left CTA now lines up with the image. */
+header{padding-inline:var(--page-edge)}
+.heroV7 .heroImage{margin-left:var(--page-edge)}
+header>.btn.small,
+.heroV7>.heroText>.btn,
+.contact .btn.light{background:var(--cta-wash);border:1px solid rgba(226,176,158,.72);color:#fff}
+header>.btn.small:hover,
+.heroV7>.heroText>.btn:hover,
+.contact .btn.light:hover{background:var(--cta-wash-hover);border-color:#e2b09e}
+
+/* One editorial grid for the light sections */
+.intro{display:block;padding:46px var(--page-edge)}
+.intro>div{width:min(100%,var(--content-max));max-width:var(--content-max);margin:0 auto}
+.intro h2,.intro p,.intro strong{max-width:none}
+
+.areas{padding:46px var(--page-edge)}
+.areasIntro{width:min(100%,var(--content-max));max-width:var(--content-max);margin:0 auto 25px}
+.areasIntro .lead{max-width:none;width:100%;margin-right:0;margin-left:0}
+.grid{width:min(100%,var(--content-max));max-width:var(--content-max)}
+
+/* Keep the headline visually deliberate instead of a stray half-line */
+.oneLineTitle{max-width:var(--content-max);text-wrap:balance}
+
+/* Testimonials: one calm editorial field, all four visible */
+.reviews{padding:48px var(--page-edge) 54px}
+.reviews .sectionHead{width:min(100%,var(--content-max));max-width:var(--content-max);margin:0 auto 25px}
+.reviews .sectionHead h2{margin-bottom:4px}
+.fullReviews{width:min(100%,var(--content-max));max-width:var(--content-max);grid-template-columns:repeat(2,minmax(0,1fr));gap:0;background:rgba(20,43,56,.13);border:1px solid rgba(20,43,56,.13)}
+.fullReviews blockquote{position:relative;background:rgba(255,255,255,.56);border:0;margin:0;padding:32px 34px 28px;font-family:'Assistant',Arial,sans-serif;font-size:16px;line-height:1.62;color:#344851;min-height:100%;text-wrap:pretty}
+.fullReviews blockquote:nth-child(odd){border-left:1px solid rgba(20,43,56,.13)}
+.fullReviews blockquote:nth-child(-n+2){border-bottom:1px solid rgba(20,43,56,.13)}
+.fullReviews blockquote::before{content:none;display:none}
+.fullReviews cite{font-family:'Assistant',Arial,sans-serif;font-size:13px;font-weight:600;color:#7b716b;margin-top:18px}
+
+/* Slightly calmer vertical rhythm between the aligned sections */
+.intro p,.areasIntro .lead{line-height:1.54}
+.intro p{margin-bottom:8px}
+
+@media(max-width:900px){
+ .heroV7 .heroImage{margin-left:0}
+ .intro,.areas,.reviews{padding-left:24px;padding-right:24px}
+ .fullReviews{grid-template-columns:1fr}
+ .fullReviews blockquote{border-left:0!important;border-bottom:1px solid rgba(20,43,56,.13)!important;padding:27px 25px 24px;font-size:15.5px}
+ .fullReviews blockquote:last-child{border-bottom:0!important}
+}
+
+
+/* V13 — nine treatment areas in a balanced 3x3 desktop grid */
+@media(min-width:1101px){.areas .grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+
+/* V14: artists page and SEO content links */
+.areaLink{color:inherit;text-decoration:none;display:block;height:100%}.areaLink:hover b{text-decoration:underline;text-underline-offset:4px}.moreLink{display:inline-block;margin-top:.65rem;font-weight:700;color:var(--navy,#16323b);text-decoration:underline;text-underline-offset:4px}.artistsHero{max-width:1240px;margin:0 auto;padding:84px 5vw 58px}.artistsHero .eyebrow{display:block;margin-bottom:14px}.artistsHero h1{font-size:clamp(2.4rem,5vw,5rem);line-height:1.04;max-width:1000px;margin:0 0 24px}.artistsHero .lead{font-size:clamp(1.12rem,1.6vw,1.42rem);line-height:1.7;max-width:900px}.artistsContent{max-width:1240px;margin:0 auto;padding:20px 5vw 80px}.artistsContent h2{font-size:clamp(1.8rem,3vw,3rem);margin:0 0 22px}.artistsContent p{max-width:900px;font-size:1.08rem;line-height:1.75}.artistsGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:38px 0 68px}.artistsGrid article{padding:26px;border-top:1px solid rgba(20,45,54,.2);background:rgba(255,255,255,.18)}.artistsGrid b{font-size:1.14rem}.artistsGrid p{font-size:.98rem;line-height:1.65}.artistsCta{margin-top:60px;padding:46px;background:#173740;color:#f6f0e5}.artistsCta h2{color:inherit}.artistsCta p{color:inherit}.artistsCta .btn{margin-top:12px}.backHome{display:inline-block;margin-top:24px;color:inherit}
+@media(max-width:820px){.artistsHero{padding-top:52px}.artistsGrid{grid-template-columns:1fr}.artistsCta{padding:30px 22px}}
+
+
+/* V14.1 — precise sticky-header anchors and artists page in the same visual system */
+section[id], .method[id]{scroll-margin-top:92px}
+.artistHeroSite{background:var(--deep);color:#fff;display:grid;grid-template-columns:58% 42%;direction:rtl;min-height:620px}
+.artistHeroText{padding:70px 6.3vw 58px 6vw;display:flex;flex-direction:column;justify-content:center;align-items:flex-start}
+.artistKicker{font-size:13px;color:#d99a7f;margin-bottom:12px}
+.artistHeroSite h1{font-family:'Amatic SC',cursive;font-size:clamp(48px,4.5vw,70px);line-height:1.02;margin:0 0 18px;max-width:760px}
+.artistLead{font-size:16.5px;line-height:1.67;max-width:760px;color:#eeeae4;margin:0 0 8px}
+.artistHeroImage{margin:30px 0 30px var(--page-edge);overflow:hidden;border-radius:0 14px 14px 0}
+.artistHeroImage img{width:100%;height:100%;object-fit:cover;object-position:center 42%}
+.artistIntro{background:var(--cream);padding:50px var(--page-edge)}
+.artistIntro>div{width:min(100%,var(--content-max));margin:0 auto}
+.artistIntro h2,.artistStudio h2{font-family:'Amatic SC',cursive;font-size:42px;line-height:1.1;margin:0 0 15px}
+.artistIntro p{font-size:16.5px;line-height:1.58;margin:8px 0}
+.artistAreas{padding:50px var(--page-edge);background:var(--paper)}
+.artistAreas .sectionHead{width:min(100%,var(--content-max));margin:0 auto 25px}
+.artistGridSite{width:min(100%,var(--content-max));margin:0 auto;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:#ded8ce;border:1px solid #ded8ce}
+.artistGridSite article{background:var(--paper);padding:22px 23px}
+.artistGridSite b{font-size:17px}.artistGridSite p{font-size:14.5px;line-height:1.52;color:#5d6664;margin:7px 0 0}
+.artistStudio{display:grid;grid-template-columns:58% 42%;background:var(--blue);color:#fff;min-height:470px}
+.artistStudioText{padding:54px 6.3vw;display:flex;flex-direction:column;justify-content:center}
+.artistStudioText p{font-size:15.8px;line-height:1.62;color:#e2e7e7;margin:7px 0;max-width:760px}.artistStudioText strong{margin-top:12px}
+.artistStudioImage{overflow:hidden}.artistStudioImage img{width:100%;height:100%;object-fit:cover;object-position:center;filter:saturate(.85)}
+@media(max-width:900px){section[id],.method[id]{scroll-margin-top:78px}.artistHeroSite{display:flex;flex-direction:column;min-height:0}.artistHeroText{order:1;padding:42px 24px 34px}.artistHeroImage{order:2;height:42vh;min-height:320px;margin:0;border-radius:0}.artistHeroSite h1{font-size:54px}.artistIntro,.artistAreas{padding:44px 24px}.artistGridSite{grid-template-columns:1fr}.artistStudio{grid-template-columns:1fr}.artistStudioText{padding:44px 24px}.artistStudioImage{height:320px}}
+
+/* V14.2 — navigation clarity and artists integration */
+.inlineArtistLink{color:inherit;font-weight:700;text-underline-offset:3px}.inlineArtistLink:hover{text-decoration-thickness:2px}nav a[aria-current="page"]{color:#fff;text-decoration:underline;text-underline-offset:6px}
+
+
+/* V14.3 — local-safe navigation + identical CTA treatment on artists page */
+.artistHeroSite .btn{background:var(--cta-wash);border:1px solid rgba(226,176,158,.72);color:#fff}
+.artistHeroSite .btn:hover{background:var(--cta-wash-hover);border-color:#e2b09e}
+
+/* V15 — artists hero uses the exact same content edge and CTA language as Home */
+.artistHeroText{padding-right:var(--page-edge);padding-left:5.4vw;align-items:stretch}
+.artistHeroText .artistKicker,.artistHeroText h1,.artistHeroText .artistLead,.artistHeroText .credentials{width:100%;max-width:800px}
+.artistHeroText>.btn{align-self:flex-start;background:var(--cta-wash);border:1px solid rgba(226,176,158,.72);color:#fff}
+@media(max-width:900px){.artistHeroText{padding-right:24px;padding-left:24px;align-items:stretch}}
+
+
+/* V16 — Mobile polish: navigation, scale, rhythm and compact contact layout */
+.menuToggle{display:none;background:transparent;border:0;color:#fff;width:38px;height:38px;padding:8px;cursor:pointer;flex:0 0 auto}
+.menuToggle span{display:block;width:22px;height:1.5px;background:currentColor;margin:5px auto;transition:transform .2s ease,opacity .2s ease}
+
+@media(max-width:900px){
+ :root{--mobile-edge:20px}
+ body{font-size:15px;line-height:1.52}
+ header{height:70px;padding:0 var(--mobile-edge);gap:10px;justify-content:flex-start;direction:rtl}
+ .brand{margin:0;min-width:0;line-height:1.04;flex:1 1 auto}
+ .brand b{font-size:23px;white-space:nowrap}
+ .brand small{font-size:8px;margin-top:4px;white-space:nowrap}
+ header>.btn.small{order:3;flex:0 0 auto;font-size:10.5px;padding:9px 12px;border-radius:9px;white-space:nowrap}
+ .menuToggle{display:block;order:2}
+ header nav{display:none;position:absolute;top:70px;right:0;left:0;margin:0;padding:10px var(--mobile-edge) 14px;background:rgba(16,41,54,.99);border-top:1px solid rgba(255,255,255,.10);box-shadow:0 10px 22px rgba(0,0,0,.16);gap:0;direction:rtl;z-index:20}
+ body.menuOpen header nav{display:flex;flex-direction:column}
+ header nav a{display:block;padding:11px 2px;border-bottom:1px solid rgba(255,255,255,.09);font-size:14px;opacity:.92}
+ header nav a:last-child{border-bottom:0}
+ body.menuOpen .menuToggle span:nth-child(1){transform:translateY(6.5px) rotate(45deg)}
+ body.menuOpen .menuToggle span:nth-child(2){opacity:0}
+ body.menuOpen .menuToggle span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg)}
+ section[id],.method[id]{scroll-margin-top:82px}
+
+ .heroV7 .heroText{padding:32px var(--mobile-edge) 28px}
+ .heroName{font-size:49px!important;line-height:.98!important;margin-bottom:7px!important}
+ .heroRole{font-size:18px;line-height:1.28;margin-bottom:13px}
+ .heroStatement{font-size:15px!important;line-height:1.56!important}
+ .heroV7 .credentials{font-size:15px;margin:10px 0 13px}
+ .heroV7>.heroText>.btn{padding:11px 18px;font-size:15px;align-self:flex-start}
+ .quick{font-size:12.5px;gap:9px;margin-top:12px;flex-wrap:nowrap}
+ .psychotherapyInline{margin-top:19px;padding-top:16px}
+ .psychotherapyInline h3{font-size:31px;margin-bottom:7px}
+ .psychotherapyInline p{font-size:14.5px!important;line-height:1.5!important;margin-bottom:7px!important}
+ .heroV7 .heroImage{height:38vh;min-height:280px}
+
+ .intro,.areas,.reviews{padding-left:var(--mobile-edge);padding-right:var(--mobile-edge)}
+ .intro{padding-top:38px;padding-bottom:40px}
+ .intro h2,.method h2,.about h2,.studio h2{font-size:37px}
+ .oneLineTitle{font-size:34px!important;line-height:1.08;text-wrap:balance}
+ .intro p{font-size:15px;line-height:1.52;margin-bottom:8px}
+ .intro strong{font-size:15px;line-height:1.48;margin-top:13px;padding-right:13px}
+
+ .areas{padding-top:40px;padding-bottom:40px}
+ .sectionHead{margin-bottom:20px}
+ .sectionHead h2{font-size:37px;line-height:1.08}
+ .sectionHead p,.areasIntro .lead{font-size:15px;line-height:1.52}
+ .areasIntro{margin-bottom:21px}
+ .grid article{padding:17px 18px 16px}
+ .grid b{font-size:16px}
+ .grid p{font-size:14px;line-height:1.46;margin-top:5px}
+ .moreLink{font-size:13.5px;margin-top:.5rem}
+
+ .method{padding:40px var(--mobile-edge)}
+ .method p,.method strong{font-size:15px;line-height:1.52}
+ .methodTags{font-size:13.5px;margin-top:15px;padding-top:13px;line-height:1.55}
+ .studioImg{height:275px}
+ .studioText{padding:38px var(--mobile-edge)}
+ .studioText p{font-size:14.5px;line-height:1.5}
+
+ .reviews{padding-top:40px;padding-bottom:44px}
+ .fullReviews blockquote{padding:22px 20px 20px;font-size:14.5px;line-height:1.55}
+ .fullReviews cite{font-size:12.5px;margin-top:13px}
+
+ .contact{padding:42px var(--mobile-edge) 46px}
+ .contact h2{font-size:43px;line-height:1.05;margin:4px 0 10px}
+ .contact p{font-size:15px;line-height:1.5;margin:8px auto 18px;max-width:560px}
+ .contact .btn{padding:11px 19px;font-size:15px}
+ .contactLinks{flex-direction:row;align-items:center;flex-wrap:nowrap;gap:10px;margin-top:18px;font-size:13px}
+ footer{padding:14px var(--mobile-edge);font-size:11.5px}
+
+ /* Artists page uses the same mobile scale */
+ .artistHeroText{padding:36px var(--mobile-edge) 30px}
+ .artistKicker{font-size:12px;margin-bottom:9px}
+ .artistHeroSite h1{font-size:47px;line-height:1.02;margin-bottom:14px}
+ .artistLead{font-size:15px;line-height:1.56}
+ .artistHeroText .credentials{font-size:15px;margin:10px 0 13px}
+ .artistHeroText>.btn{padding:11px 18px;font-size:15px}
+ .artistHeroImage{height:36vh;min-height:270px}
+ .artistIntro,.artistAreas{padding:40px var(--mobile-edge)}
+ .artistIntro h2,.artistStudio h2{font-size:37px}
+ .artistIntro p{font-size:15px;line-height:1.52}
+ .artistGridSite article{padding:17px 18px}
+ .artistGridSite b{font-size:16px}
+ .artistGridSite p{font-size:14px;line-height:1.48}
+ .artistStudioText{padding:38px var(--mobile-edge)}
+ .artistStudioText p{font-size:14.5px;line-height:1.5}
+ .artistStudioImage{height:275px}
+}
+
+@media(max-width:420px){
+ :root{--mobile-edge:17px}
+ header{gap:7px}
+ .brand b{font-size:21px}
+ .brand small{font-size:7.4px}
+ header>.btn.small{font-size:9.8px;padding:8px 9px}
+ .menuToggle{width:34px;padding:7px}
+ .heroName{font-size:46px!important}
+ .heroRole{font-size:17px}
+ .oneLineTitle{font-size:32px!important}
+ .sectionHead h2{font-size:35px}
+ .contact h2{font-size:40px}
+ .contactLinks{gap:8px;font-size:12.5px}
+ .artistHeroSite h1{font-size:44px}
+}
+
+/* V16.1 — Mobile type refinement: slightly more compact reading scale, desktop untouched */
+@media(max-width:900px){
+ body{font-size:14px;line-height:1.48}
+ .heroStatement{font-size:14px!important;line-height:1.50!important}
+ .psychotherapyInline p{font-size:13.5px!important;line-height:1.46!important}
+ .intro p{font-size:14px;line-height:1.48}
+ .intro strong{font-size:14px;line-height:1.45}
+ .sectionHead p,.areasIntro .lead{font-size:14px;line-height:1.48}
+ .grid p{font-size:13px;line-height:1.43}
+ .method p,.method strong{font-size:14px;line-height:1.48}
+ .studioText p{font-size:13.5px;line-height:1.46}
+ .fullReviews blockquote{font-size:13px;line-height:1.50}
+ .contact p{font-size:14px;line-height:1.46}
+ .artistLead{font-size:14px;line-height:1.50}
+ .artistIntro p{font-size:14px;line-height:1.48}
+ .artistGridSite p{font-size:13px;line-height:1.44}
+ .artistStudioText p{font-size:13.5px;line-height:1.46}
+}
+@media(max-width:420px){
+ .heroName{font-size:45px!important}
+ .oneLineTitle{font-size:31px!important}
+ .sectionHead h2{font-size:34px}
+ .contact h2{font-size:39px}
+}
+
+/* V16.2 — Header identity refinement only */
+.brand b{font-size:26px}
+.brand small{font-size:12px;line-height:1.18;margin-top:5px;opacity:.82}
+@media(max-width:900px){
+ .brand b{font-size:25px}
+ .brand small{font-size:9.5px;line-height:1.16;margin-top:4px}
+}
+@media(max-width:420px){
+ .brand b{font-size:23px}
+ .brand small{font-size:8.8px}
+}
+
+/* V16.8 bilingual additions only */
+.langSwitch{display:flex;align-items:center;gap:7px;font-size:12px;letter-spacing:.08em;white-space:nowrap}.langSwitch a{opacity:.72}.langSwitch a:hover{opacity:1}.langSwitch b{font-weight:700}.langSwitch span{opacity:.38}
+html[dir="ltr"] body{text-align:left}html[dir="ltr"] .brand{margin-left:0;margin-right:auto}html[dir="ltr"] .heroText,html[dir="ltr"] .sectionHead,html[dir="ltr"] .studioText,html[dir="ltr"] .method{text-align:left}
+@media(max-width:760px){.langSwitch{margin-left:auto;margin-right:2px;font-size:11px}html[dir="ltr"] .langSwitch{margin-left:auto;margin-right:2px}}
+
+
+/* English LTR overrides */
+html[dir="ltr"] body{direction:ltr}
+html[dir="ltr"] header{direction:ltr}
+html[dir="ltr"] .brand{margin-left:0;margin-right:auto}
+html[dir="ltr"] .heroText,html[dir="ltr"] .artistHeroText{direction:ltr}
+html[dir="ltr"] .hero{direction:ltr}
+html[dir="ltr"] .sectionHead,html[dir="ltr"] .sectionIntro,html[dir="ltr"] .copy,html[dir="ltr"] .artistIntro,html[dir="ltr"] .artistTopics,html[dir="ltr"] .artistStudioCopy,html[dir="ltr"] .artistCta{direction:ltr;text-align:left}
